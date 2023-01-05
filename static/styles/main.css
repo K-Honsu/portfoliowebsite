@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
+  align-items: center;
 }
 
 .nav-link {
@@ -28,7 +29,7 @@ body {
 
 .hero {
   background-color: #1f2428;
-  min-height: 70vh;
+  min-height: 90vh;
   color: #fff;
 }
 
@@ -58,6 +59,7 @@ body {
   font-size: 100px;
   letter-spacing: 0.1em;
   /* font-weight: 700; */
+  line-height: 0.9em;
 }
 
 .description {
@@ -121,6 +123,14 @@ body {
 .skill--wrapper {
   margin-top: 2em;
   margin-bottom: 2em;
+  display: flex;
+  gap: 2em;
+  align-items: start;
+}
+
+.skill--logo {
+  width: 60px;
+  object-fit: contain;
 }
 
 .other--skills--wrapper {
@@ -164,5 +174,11 @@ body {
 @media (max-width: 600px) {
   .skills--container {
     width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .skill--wrapper {
+    flex-flow: column;
   }
 }
