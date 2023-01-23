@@ -1,6 +1,6 @@
 from django.db import models
 import uuid
-from ckeditor_uploader.fields import RichTextUploadingField
+# from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
 
@@ -13,7 +13,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 class Project(models.Model):
     title = models.CharField(max_length=200)
     thumbnail = models.ImageField(null=True)
-    body = RichTextUploadingField(blank=True) 
+    # body = RichTextUploadingField(blank=True) 
     created = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(null=True,blank=True)
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
