@@ -25,9 +25,9 @@ SECRET_KEY = '0cce6c9ed8f5cb17ec651f200f6ce346'
 # SECRET_KEY = os.environ.get('SECRET_KEY_PORTFOLIOWEBSITE')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['portfolio-website-vrw6.onrender.com']
 
 
 # Application definition
