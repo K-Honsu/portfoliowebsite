@@ -27,7 +27,7 @@ SECRET_KEY = '0cce6c9ed8f5cb17ec651f200f6ce346'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['portfolio-website-vrw6.onrender.com']
+ALLOWED_HOSTS = ['portfolio-website-vrw6.onrender.com', '127.0.0.1:8000', '127.0.0.1']
 
 
 # Application definition
